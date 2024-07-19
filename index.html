@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pernikahan &mdash; Restu &amp; Dewi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body onload="playAudio()">
+
+	<div class="fh5co-loader"></div>
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html">RD</a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li class="has-dropdown">
+								<a href="">Detail Acara</a>
+								<ul class="dropdown">
+									<li><a href="#acara">Waktu Acara</a></li>
+									<li><a href="#lokasi">Lokasi Detail</a></li>
+								</ul>
+							</li>
+							<li class="has-dropdown">
+								<a href="#fh5co-gallery">Galeri Kami</a>
+							</li>
+							<li><a href="#fh5co-event">Hadiah</a></li>
+							<!-- <li><a href="#fh5co-testimonial">Sampaikan Pesan</a></li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner"
+			style="background-image:url(images/img_bg_1.jpg);">
+			<div class="overlay"></div>
+			<div class="fh5co-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h2 style="margin-top: 12%;">Undangan Pernikahan</h2>
+								<h1>Restu &amp; Dewi</h1>
+								<p style="color: white;">Minggu, 01 September 2024
+								</p>
+								<p style="color: white;">Kepada Yth Bapak/Ibu/Saudara/i</p>
+								<div id="guest-name">
+									<script>guestName</script>
+								</div>
+								<script>
+									const guestNameElement = document.getElementById('guest-name');
+									const guestName = new URLSearchParams(window.location.search).get('kepada');
+									guestNameElement.textContent = guestName;
+									guestNameElement.style.cssText = `
+									color: white;
+									font-size:24px;
+									
+									`;
+								</script>
+
+								<audio id="myAudio" src="./images/sound.mp3"></audio>
+								<p><a href="#fh5co-couple" class="btn btn-default btn-sm" style="margin-top: 10px;" onclick="playAudio()">Buka Undangan</a></p>
+								<script>
+									function playAudio() {
+										// Dapatkan elemen audio
+										var audioElement = document.getElementById("myAudio");
+										audioElement.play();
+									}
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fh5co-couple" class="animate-box" data-animate-effect="fadeIn">
+			<div class="container mb-4">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<h1 class="font-arabic py-4 px-2" style="font-size: 2rem">
+							بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+						</h1>
+						<h2 class="font-esthetic py-4 px-2" style="font-size: 2rem">
+							Assalamualaikum Warahmatullahi Wabarakatuh
+						</h2>
+						<p>
+							Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
+							serta kerabat sekalian untuk menghadiri acara pernikahan kami:
+						</p>
+
+					</div>
+				</div>
+				<div class="couple-wrap animate-box">
+					<div class="couple-half">
+						<div class="groom">
+							<img src="images/res.png" alt="groom" class="img-responsive">
+						</div>
+						<div class="desc-groom">
+							<h3>Restu Syamsul Firmansyah</h3>
+							<p>Putra Bapak Syarif Sariping &amp; <br> Ibu Iyet Nurhayati</p>
+							<ul class="fh5co-social-icons">
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<p class="heart text-center"><i class="icon-heart2"></i></p>
+					<div class="couple-half">
+						<div class="bride">
+							<img src="images/dew.png" alt="groom" class="img-responsive">
+						</div>
+						<div class="desc-bride">
+							<h3>Dewi Puspasari</h3>
+							<p>Putri Bapak Samhudi (Alm) <br> &amp; Ibu Julaeha</p>
+							<ul class="fh5co-social-icons">
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+				<p>
+					Seraya menengadahkan tangan memohon Rahmat serta Ridho Allah SWT. Kami bermaksut untuk menyelenggarakan
+					pernikahan yang Insya Allah akan dilaksanakan pada :
+				</p>
+			</div>
+		</div>
+		<div class="row" id="acara">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box mt-4">
+				<h2 style="font-size: 3rem">Akad Nikah</h2>
+					<table class="table" border="0">
+						<tr>
+							<td>Hari/Tanggal</td>
+							<td>:</td>
+							<td> Minggu, 01 September 2024</td>
+						</tr>
+						<tr>
+							<td>Waktu Akad</td>
+							<td>:</td>
+							<td>08:00 WIB - Selesai</td>
+						</tr>
+						<tr>
+							<td>Tempat</td>
+							<td>:</td>
+							<td> Desa Babakansari, Kec Bantarujeg</td>
+						</tr>
+					</table>
+					<p><a
+							href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan%20Restu%20and%20Dewi&details=Pernikahan%20Restu%20and%20Dewi%20%7C%2001%20September%202024%20%7C%20RT%20022%20RW%20007,%20Desa%20Babakansari,%20Kec.%20Bantarujeg,%20Kab.%20Majalengka,%20Jawa%20Barat%2045465%20%7C%2008.00%20-%20Selesai%20WIB&dates=20240901T100000/20240901T110000&location=https://shorturl.at/yH3XU"
+							class="btn btn-default btn-sm">Simpan Di google Kalender</a></p>
+				</div>
+				<br>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+				<div class="simply-countdown my-countdown"></div>
+			</div>
+		</div>
+		<div class="row" id="lokasi">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+				<h2 style="font-size: 3rem">Details Lokasi</h2>
+				<div class="py-2" data-aos="fade-up" data-aos-duration="1500">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4595754258116!2d108.21818971015176!3d-6.954989568062053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f310009f24209%3A0xddbdbe7485e7a3db!2sPernikahan%20Dewi%20%26%20Restu!5e0!3m2!1sid!2sid!4v1721297343446!5m2!1sid!2sid"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(./images/c.JPG); ">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<h2>Love Gift</h2>
+						<span>Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan
+							tanda kasih untuk kami, dapat melalui :</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="display-t">
+						<div class="display-tc">
+							<div class="col-md-10 col-md-offset-1">
+								<div class="col-md-6 col-sm-6 text-center">
+									<div class="event-wrap animate-box">
+										<h3>a/n DEWI PUSPASARI</h3>
+										<div class="event-row">
+											<img
+												src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/1920px-Bank_Mandiri_logo_2016.svg.png"
+												class="img-fluid" style="width: 50%;" alt="Bank_Mandiri_logo_2016" />
+										</div>
+										<br>
+										<p>No. Rekening 1340025792697</p>
+										<button class="btn btn-default btn-sm" data-copy="1340025792697" onclick="copy(this, 'Tersalin')"
+											autofocus>Salin Rekening
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 text-center">
+									<div class="event-wrap animate-box">
+										<h3>a/n RESTU SYAMSUL FIRMAN</h3>
+										<div class="event-row">
+											<img
+												src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/1920px-Bank_Mandiri_logo_2016.svg.png"
+												class="img-fluid" style="width: 50%;" alt="Bank_Mandiri_logo_2016" />
+										</div>
+										<br>
+										<p>No. Rekening 1340024629338</p>
+										<button class="btn btn-default btn-sm" data-copy="1340024629338" onclick="copy(this, 'Tersalin')"
+											autofocus> Salin Rekening
+
+											<script>
+												function copy(button, message) {
+													const text = button.dataset.copy;
+													navigator.clipboard.writeText(text)
+														.then(() => {
+															button.textContent = message;
+															setTimeout(() => {
+																button.textContent = 'Salin Rekening';
+															}, 2000);
+														})
+														.catch(err => {
+															console.error('Failed to copy', err);
+														});
+												}
+
+											</script>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-gallery" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<span>Kenangan Kami</span>
+						<h2>Gallery Pernikahan</h2>
+						<p>Banyak hal yang kami lalui bersama, baik suka duka dan bahagia. Namun kami berusaha untuk terus melalui
+							itu bersama - sama sampai pada akhirnya, moment bahagia ini tiba.</p>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12">
+						<ul id="fh5co-gallery-list">
+
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(1\).JPG); ">
+								<a href="images/a_ (1).JPG">
+									<div class="case-studies-summary">
+										<span></span>
+										<h2>Two Glas of Juice</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(2\).jpg); ">
+								<a href="./images/a_ (2).jpg" class="color-2">
+									<div class="case-studies-summary">
+										<span></span>
+										<h2>Beautiful sunset</h2>
+									</div>
+								</a>
+							</li>
+
+
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(3\).jpg); ">
+								<a href="./images/a_ (3).jpg" class="color-3">
+									<div class="case-studies-summary">
+										<span>Unos, Dos, Tres</span>
+										<h2>Halla Madrid</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(4\).jpg); ">
+								<a href="./images/a_ (4).jpg" class="color-4">
+									<div class="case-studies-summary">
+										<span></span>
+										<h2>Beutifull in White</h2>
+									</div>
+								</a>
+							</li>
+
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(5\).JPG); ">
+								<a href="./images/a_ (5).JPG" class="color-3">
+									<div class="case-studies-summary">
+										<span></span>
+										<h2>Momen terindah dalam hidupku</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(6\).jpg); ">
+								<a href="./images/a_ (6).jpg" class="color-4">
+									<div class="case-studies-summary">
+										<span>#hallamadrid</span>
+										<h2>Aku, Kamu, dan Madrid</h2>
+									</div>
+								</a>
+							</li>
+
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(7\).JPG); ">
+								<a href="./images/a_ (7).JPG" class="color-4">
+									<div class="case-studies-summary">
+										<span></span>
+										<h2>Happily ever after.</h2>
+									</div>
+								</a>
+							</li>
+
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/a_\ \(8\).JPG); ">
+								<a href="./images/a_ (8).JPG" class="color-5">
+									<div class="case-studies-summary">
+										<span></span>
+										<h2>Love is in the air.</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/c.JPG); ">
+								<a href="./images/c.JPG" class="color-6">
+									<div class="case-studies-summary">
+										<span></span>
+										<h2>Just married!</h2>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fh5co-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-push-6 animate-box">
+						<form action="#">
+							<div class="row form-group">
+								<div class="col-md-6">
+									<label for="fname">Nama</label>
+									<input type="text" id="fname" class="form-control" disabled>
+									<script>
+const fnameInput = document.getElementById('fname');
+fnameInput.value = guestName;
+
+									</script>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="pesan">Pesan Untuk Kami</label>
+									<textarea name="pesan" id="pesan" cols="30" rows="10" class="form-control" placeholder="Tulis sesuatu untuk kami"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Kirim Pesan" class="btn btn-primary" id="kirimButton">
+							</div>
+							<script>
+					const pesanTextarea = document.getElementById('pesan');
+					const kirimButton = document.getElementById('kirimButton');
+					
+					kirimButton.addEventListener('click', () => {
+						const nama = namaInput.value;
+						const pesan = pesanTextarea.value;
+					
+						// Validasi (opsional)
+						if (pesan.trim() === '') {
+							alert('Nama dan pesan tidak boleh kosong!');
+							return;
+						}
+					
+						// Buat URL WhatsApp
+						const waURL = `https://wa.me/6281398526228?text=${encodeURIComponent(pesan)}`;
+					
+						// Buka URL WhatsApp di tab baru
+						window.open(waURL, '_blank');
+					});
+					
+							</script>
+						</form>		
+					</div>
+					<div class="col-md-5 col-md-pull-5 animate-box">
+						
+						<div class="fh5co-contact-info">
+							<h3>Informasi Kontak</h3>
+							<ul>
+								<li class="address">Blok Cipondoh RT/RW 022/007, <br> Desa Babakansari Kec. Bantarujeg</li>
+								<li class="phone"><a href="https://wa.me/6281398526228">+ 62 813-9852-6228</a></li>
+							</ul>
+						</div>
+	
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</div>
+
+		
+		<!-- <div id="fh5co-testimonial">
+			<div class="container">
+				<div class="row">
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<span>Do'a Terbaik mu sampaikan disini</span>
+							<h2>Doa Sahabat Terbaik</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<div class="wrap-testimony">
+								<form action="undangan.php" method="post" style="background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 0 auto;">
+									<label for="nama" style="display: block;
+		margin-bottom: 5px;
+		font-weight: bold;">Nama:</label>
+									<input type="text" id="nama" name="nama" required><br><br>
+
+									<label for="hadir" style="display: block;
+		margin-bottom: 5px;
+		font-weight: bold;">Hadir:</label>
+									<select id="hadir" name="hadir">
+										<option value="ya">Ya</option>
+										<option value="tidak">Tidak</option>
+									</select><br><br>
+
+									<label for="pesan" style="display: block;
+		margin-bottom: 5px;
+		font-weight: bold;">Pesan:</label>
+									<textarea id="pesan" name="pesan"></textarea><br><br>
+
+									<input type="submit" value="Kirim" class="btn btn-default btn-sm">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="pesan-container">
+							<div class="pesan saya">
+								<div class="nama">Saya</div>
+								<div class="isi-pesan">Halo, terima kasih atas undangannya. Saya akan hadir.</div>
+							</div>
+
+							<div class="pesan lainnya">
+								<div class="nama">Restu</div>
+								<div class="isi-pesan">Wah, senang sekali kamu bisa hadir!</div>
+							</div>
+
+							<div class="pesan saya">
+								<div class="nama">Berto</div>
+								<div class="isi-pesan">Lancar lancar wiii</div>
+							</div>
+							<div class="pesan lainnya">
+								<div class="nama">Dewi</div>
+								<div class="isi-pesan">Aaamiin, Semoga yaa</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak
+						/ Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya
+						kami ucapkan terimakasih.
+					</p>
+
+					<p>
+						Wassalamualaikum Warahmatullahi Wabarakatuh
+					</p>
+					<h1 class="font-arabic pt-4 px-2" data-aos="fade-up" data-aos-duration="2000" style="font-size: 2rem">
+						اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ
+					</h1>
+
+					<hr class="mt-3 mb-2" />
+
+					<div class="row align-items-center justify-content-between flex-column flex-sm-row">
+						<div class="col-auto">
+							<small class="text-light">
+								Hormat Kami, Restu dan Dewi
+							</small>
+						</div>
+					</div>
+					<p>
+					<!-- <ul class="fh5co-social-icons">
+						<li><a href="#"><i class="icon-home"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+					</ul> -->
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>
